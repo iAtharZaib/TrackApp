@@ -123,7 +123,7 @@ function Example({navigation}: RootScreenProps<Paths.Example>) {
             </TouchableOpacity>
 
             <TouchableOpacity
-              onPress={toggleLanguage}
+              onPress={() => navigation.navigate(Paths.Map)}
               style={[components.buttonCircle, gutters.marginBottom_16]}
               testID="change-language-button"
             >

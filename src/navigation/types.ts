@@ -9,5 +9,6 @@ export type RootStackParamList = {
   [Paths.Example]: undefined;
   [Paths.Startup]: undefined;
   [Paths.Login]: undefined;
+  [Paths.Map]: undefined;
 
 };
