@@ -7,6 +7,7 @@ import Toast from 'react-native-toast-message';
 import ApplicationNavigator from '@/navigation/Application';
 import { ThemeProvider } from '@/theme';
 import '@/translations';
+import { NetworkBanner } from '@/components/molecules/NetworkBanner/NetworkBanner';
 
 export const queryClient = new QueryClient({
   defaultOptions: {
@@ -28,6 +29,7 @@ function App() {
         <ThemeProvider storage={storage}>
           <ApplicationNavigator />
           <Toast />
+          <NetworkBanner /> 
         </ThemeProvider>
       </QueryClientProvider>
     </GestureHandlerRootView>
