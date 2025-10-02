@@ -115,7 +115,8 @@ function Example({navigation}: RootScreenProps<Paths.Example>) {
             </Skeleton>
 
             <TouchableOpacity
-              onPress={onChangeTheme}
+              // onPress={onChangeTheme}
+              onPress={() => navigation.navigate(Paths.UserData)}
               style={[components.buttonCircle, gutters.marginBottom_16]}
               testID="change-theme-button"
             >

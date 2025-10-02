@@ -3,4 +3,5 @@ export const enum Paths {
   Startup = 'startup',
   Login = 'login',
   Map = 'map',
+  UserData = 'UserData',
 }

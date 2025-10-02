@@ -9,6 +9,7 @@ import { useTheme } from '@/theme';
 
 import { Example, Startup,Login } from '@/screens';
 import MapScreen from '@/screens/Map/MapScreen';
+import UserData from '@/screens/UserData/Userdata';
 
 const Stack = createStackNavigator<RootStackParamList>();
 
@@ -23,6 +24,7 @@ function ApplicationNavigator() {
           <Stack.Screen component={Login} name={Paths.Login} />
           <Stack.Screen component={Example} name={Paths.Example} />
           <Stack.Screen component={MapScreen} name={Paths.Map} />
+          <Stack.Screen component={UserData} name={Paths.UserData} />
         </Stack.Navigator>
       </NavigationContainer>
     </SafeAreaProvider>
